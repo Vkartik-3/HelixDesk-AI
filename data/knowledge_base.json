@@ -1,0 +1,104 @@
+[
+    {
+        "id": "pr-001",
+        "category": "Password Reset",
+        "problem": "I forgot my email password.",
+        "solution": "Please go to the company login page, click on 'Forgot Password', and follow the steps to reset your email password."
+    },
+    {
+        "id": "pr-002",
+        "category": "Password Reset",
+        "problem": "My account is locked due to multiple failed login attempts.",
+        "solution": "Wait 15 minutes for auto-unlock or contact IT to manually reset your account."
+    },
+    {
+        "id": "pr-003",
+        "category": "Password Reset",
+        "problem": "How can I change my password proactively?",
+        "solution": "Log in to the company portal, go to 'Account Settings', and click on 'Change Password'."
+    },
+    {
+        "id": "ni-001",
+        "category": "Network Issue",
+        "problem": "Unable to connect to VPN.",
+        "solution": "Ensure VPN client is up to date. Restart your PC, launch the VPN app, and reconnect."
+    },
+    {
+        "id": "ni-002",
+        "category": "Network Issue",
+        "problem": "Internet is slow.",
+        "solution": "Disconnect and reconnect to Wi-Fi. If the issue persists, contact the local IT network admin."
+    },
+    {
+        "id": "ni-003",
+        "category": "Network Issue",
+        "problem": "VPN keeps disconnecting frequently.",
+        "solution": "Check if you're on a stable network. If on mobile hotspot, switch to wired or Wi-Fi."
+    },
+    {
+        "id": "hi-001",
+        "category": "Hardware Issue",
+        "problem": "Laptop keyboard is not working.",
+        "solution": "Try restarting the laptop. If the issue persists, plug in an external keyboard and raise a hardware replacement ticket."
+    },
+    {
+        "id": "hi-002",
+        "category": "Hardware Issue",
+        "problem": "Monitor is not displaying anything.",
+        "solution": "Check power cable and HDMI/DisplayPort connection. Try another monitor if possible."
+    },
+    {
+        "id": "hi-003",
+        "category": "Hardware Issue",
+        "problem": "Mouse is unresponsive.",
+        "solution": "Check battery or USB connection. If wireless, try reconnecting the dongle or Bluetooth."
+    },
+    {
+        "id": "sb-001",
+        "category": "Software Bug",
+        "problem": "Outlook crashes on opening.",
+        "solution": "Run Outlook in safe mode (`outlook.exe /safe`). If it works, disable add-ins one by one."
+    },
+    {
+        "id": "sb-002",
+        "category": "Software Bug",
+        "problem": "HR portal gives 500 error after login.",
+        "solution": "Clear browser cache and cookies, then try again. If issue persists, escalate to HR portal dev team."
+    },
+    {
+        "id": "sb-003",
+        "category": "Software Bug",
+        "problem": "Teams not syncing messages.",
+        "solution": "Restart Teams, sign out and sign back in. If still broken, clear Teams cache from `%appdata%`."
+    },
+    {
+        "id": "ar-001",
+        "category": "Access Request",
+        "problem": "Need access to HR shared drive.",
+        "solution": "Please fill the access request form and get approval from your HR manager."
+    },
+    {
+        "id": "ar-002",
+        "category": "Access Request",
+        "problem": "Requesting access to Jira project XYZ.",
+        "solution": "Raise an access request via the service portal specifying the project and justification."
+    },
+    {
+        "id": "ar-003",
+        "category": "Access Request",
+        "problem": "I need admin rights to install software.",
+        "solution": "Submit a software install request. IT will verify the license and grant temporary admin access if valid."
+    },
+    {
+        "id": "oth-001",
+        "category": "Other",
+        "problem": "Looking for the company's leave policy.",
+        "solution": "You can find all HR policies in the internal HR portal under the 'Documents' section."
+    },
+    {
+        "id": "oth-002",
+        "category": "Other",
+        "problem": "Need to know how to report phishing emails.",
+        "solution": "Forward suspected phishing emails to `phishalert@company.com` and notify your manager."
+    }
+]
