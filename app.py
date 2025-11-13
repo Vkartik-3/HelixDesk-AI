@@ -1,4 +1,7 @@
 import streamlit as st
+# Page config must be the first Streamlit command in the script
+st.set_page_config(page_title="SupportX AI Assist", page_icon="🤖", layout="centered")
+
 from group_chat import user, manager, notification_agent
 import random
 import string
@@ -9,12 +12,16 @@ def generate_ticket_id(prefix="TKT", length=6):
     suffix = ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))
     return f"{prefix}-{suffix}"
 
-# Load custom CSS
-with open("style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-# Page config
-st.set_page_config(page_title="SupportX AI Assist", page_icon="🤖", layout="centered")
+# Load custom CSS (relative to this file)
+import os
+HERE = os.path.dirname(__file__)
+css_path = os.path.join(HERE, "style.css")
+try:
+    with open(css_path, "r") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+except FileNotFoundError:
+    # If the CSS file is missing, continue without crashing and show a small notice in the app
+    st.warning("style.css not found — continuing without custom styles.")
 
 # Title and subtitle block
 st.markdown("""

@@ -43,6 +43,6 @@ def escalate_ticket_with_email(issue: str) -> dict:
     AI Notification Agent
     """
 
-    success = send_email(to_email="sandeshhase15@gmail.com", subject=subject, body=body)
+    success = send_email(to_email="kartikvadhwana7@gmail.com", subject=subject, body=body)
     return {"content": "📧 Email sent to IT support." if success else "⚠️ Failed to send email."}
 
