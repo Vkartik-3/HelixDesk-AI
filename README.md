@@ -7,7 +7,15 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.47.1-FF4B4B.svg)](https://streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<img width="1280" height="720" alt="HelixDesk AI - Intelligent IT Ticket Resolver Multi-Agent Project" src="https://github.com/user-attachments/assets/c41a7f2b-7a27-4e94-977f-8702dc1a2b05" />
+<div align="center">
+
+## 🏗️ System Architecture
+
+<img src="architecture/architect.jpg" alt="HelixDesk AI - Autonomous Multi-Agent IT Support Platform Architecture" width="100%" />
+
+*Intelligent multi-agent architecture powered by Azure AI Search, AutoGen framework, and GPT-4*
+
+</div>
 
 ---
 
@@ -215,7 +223,13 @@ help!"       to IT with ticket ID
 
 ## 🏗️ Architecture & Technology Stack
 
-### High-Level Architecture
+### System Architecture Overview
+
+> **📸 Visual Architecture**: See the [complete architecture diagram](#-system-architecture) at the top of this README for a comprehensive visual representation of the system.
+
+The HelixDesk AI system follows a multi-layered architecture with specialized AI agents working in coordination:
+
+### High-Level Architecture (Text Representation)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -255,6 +269,18 @@ help!"       to IT with ticket ID
         │ 20+ Solutions  │
         └────────────────┘
 ```
+
+### Architecture Components
+
+The architecture diagram (shown at the top) illustrates:
+
+1. **SupportX Assistant (Frontend)**: User interaction layer where issues are submitted
+2. **Multi-Agent Framework**: Coordinated AI agents (Classifier, Knowledge Base, Notification)
+3. **Azure AI Search**: Vector store for semantic search across the knowledge base
+4. **Workflow**:
+   - User submits issue → AI Resolution attempt → Escalation if needed
+   - Vector Search → Extract Top N Records → Return solutions
+   - Create and Upload Index → Embedding → Schema Metadata
 
 ### Technology Stack
 
