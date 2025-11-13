@@ -1,0 +1,174 @@
+site_name: HelixDesk AI Documentation
+site_description: Intelligent IT Ticket Resolver - Multi-Agent System Powered by Azure OpenAI & AutoGen
+site_author: Kartik Vadhawana
+site_url: https://vkartik-3.github.io/HelixDesk-AI
+
+repo_name: Vkartik-3/HelixDesk-AI
+repo_url: https://github.com/Vkartik-3/HelixDesk-AI
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  font: false
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/robot
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kartikvadhawana
+      name: GitHub Profile
+    - icon: fontawesome/solid/envelope
+      link: mailto:kartikvadhwana7@gmail.com
+      name: Email
+
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback!
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Overview: getting-started/overview.md
+    - Why HelixDesk AI: getting-started/why-helixdesk.md
+    - Quick Start: getting-started/quick-start.md
+  - Setup & Installation:
+    - Prerequisites: setup/prerequisites.md
+    - Azure Setup: setup/azure-setup.md
+    - Local Installation: setup/installation.md
+    - Configuration: setup/configuration.md
+  - Architecture:
+    - System Overview: architecture/overview.md
+    - Multi-Agent System: architecture/multi-agent-system.md
+    - Technology Stack: architecture/tech-stack.md
+    - Data Flow: architecture/data-flow.md
+  - User Guide:
+    - For End Users: user-guide/end-users.md
+    - For IT Admins: user-guide/it-admins.md
+    - For Developers: user-guide/developers.md
+  - Technical Deep Dive:
+    - Vector Search: technical/vector-search.md
+    - AutoGen Framework: technical/autogen.md
+    - Azure Integration: technical/azure-integration.md
+    - Agents Explained: technical/agents.md
+  - Customization:
+    - Adding Solutions: customization/adding-solutions.md
+    - Creating Agents: customization/creating-agents.md
+    - Custom Tools: customization/custom-tools.md
+    - UI Customization: customization/ui-customization.md
+  - Troubleshooting:
+    - Common Issues: troubleshooting/common-issues.md
+    - FAQ: troubleshooting/faq.md
+  - API Reference:
+    - Agents API: api/agents.md
+    - Tools API: api/tools.md
+    - Configuration API: api/configuration.md
+  - Contributing:
+    - How to Contribute: contributing/how-to-contribute.md
+    - Code of Conduct: contributing/code-of-conduct.md
+  - About:
+    - License: about/license.md
+    - Changelog: about/changelog.md
+    - Contact: about/contact.md
+
+copyright: |
+  Copyright &copy; 2025 <a href="mailto:kartikvadhwana7@gmail.com">Kartik Vadhawana</a> -
+  <a href="#__consent">Change cookie settings</a>

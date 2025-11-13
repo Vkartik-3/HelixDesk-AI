@@ -1,0 +1,174 @@
+/* Custom styles for HelixDesk AI Documentation */
+
+:root {
+    --md-primary-fg-color: #3f51b5;
+    --md-primary-fg-color--light: #5c6bc0;
+    --md-primary-fg-color--dark: #303f9f;
+    --md-accent-fg-color: #2196f3;
+    --md-text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --md-code-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+/* Use system fonts */
+body, .md-typeset {
+    font-family: var(--md-text-font) !important;
+}
+
+.md-typeset code, .md-typeset pre {
+    font-family: var(--md-code-font) !important;
+}
+
+/* Grid cards styling */
+.md-typeset .grid.cards > ul > li {
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Admonition custom colors */
+.md-typeset .admonition.success {
+    border-color: #4caf50;
+}
+
+.md-typeset .admonition.success > .admonition-title {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Code block enhancements */
+.md-typeset pre > code {
+    border-radius: 6px;
+}
+
+/* Table styling */
+.md-typeset table:not([class]) {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.md-typeset table:not([class]) th {
+    background-color: var(--md-primary-fg-color);
+    color: white;
+    font-weight: 600;
+}
+
+/* Button styling */
+.md-button {
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.md-button--primary {
+    background-color: var(--md-primary-fg-color);
+}
+
+.md-button--primary:hover {
+    background-color: var(--md-primary-fg-color--dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(63, 81, 181, 0.4);
+}
+
+/* Hero section styling */
+.md-content h1:first-child {
+    font-size: 3em;
+    font-weight: 700;
+    background: linear-gradient(135deg, #3f51b5 0%, #2196f3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5em;
+}
+
+/* Badge styling */
+.md-typeset img[src*="shields.io"] {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+/* Mermaid diagram styling */
+.mermaid {
+    background-color: transparent !important;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Improved spacing for lists in cards */
+.md-typeset .grid.cards ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.md-typeset .grid.cards li {
+    list-style: none;
+}
+
+/* Custom badge colors */
+.badge-success {
+    background-color: #4caf50;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.badge-info {
+    background-color: #2196f3;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+/* Footer customization */
+.md-footer-meta {
+    background-color: var(--md-primary-fg-color);
+}
+
+/* Navigation tabs enhancement */
+.md-tabs {
+    background: linear-gradient(135deg, #3f51b5 0%, #2196f3 100%);
+}
+
+/* Search box styling */
+.md-search__input {
+    border-radius: 20px;
+}
+
+/* Code inline styling */
+.md-typeset code {
+    background-color: rgba(63, 81, 181, 0.1);
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .md-content h1:first-child {
+        font-size: 2em;
+    }
+
+    .md-typeset .grid.cards > ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #5c6bc0;
+    --md-accent-fg-color: #64b5f6;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+    background-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+    background-color: rgba(92, 107, 192, 0.2);
+}
