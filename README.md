@@ -9,6 +9,14 @@
 
 <div align="center">
 
+<img width="1280" height="720" alt="HelixDesk AI - Intelligent IT Ticket Resolver Multi-Agent Project" src="https://github.com/user-attachments/assets/c41a7f2b-7a27-4e94-977f-8702dc1a2b05" />
+
+</div>
+
+---
+
+<div align="center">
+
 ## 🏗️ System Architecture
 
 <img src="architecture/architect.jpg" alt="HelixDesk AI - Autonomous Multi-Agent IT Support Platform Architecture" width="100%" />
